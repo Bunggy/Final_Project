@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Mountain Concert</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agdasima&family=Prompt:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="x-icon" href="Picture/icon music.png"> 
+</head>
+<body>
+    <div class="top">
+        <div class="logo">
+            <a href="/index"><img src="Picture/Logo/twitter_header_photo_1.png" alt="logo"></a>
+        </div>
+        <div class="menu-bar">
+          <a href="/index" class="menu-btn">หน้าหลัก</a>
+          <a href="/concert" class="menu-btn">คอนเสิร์ต</a>
+          <% if (loggedIn) { %>
+            <a class="btn btn-sm btn-danger" href="/logout">Logout</a>
+        <% } %>
+
+        <% if (!loggedIn) { %>
+            <a class="btn btn-sm btn-outline-secondary mx-3" href="/login">Sign In</a>
+            <a class="btn btn-sm btn-success" href="/register">Sign Up</a>
+        <% } %>              
+        </div>
+    </div>
+    <img src="/Picture/concert/big mountain poster.jpg"  style="margin: 20px auto; display: block;">
+    <div class="concert">
+        
+        <div class="info">
+            <p>ชื่องาน: BIG MOUNTAIN MUSIC FESTIVAL </p>
+            <p>วันที่จัดงาน: 9-10 ธ.ค. 2566</p>
+            <p>สถานที่จัดงาน: ดิโอเชียน เขาใหญ่</p>
+            <h1>line up</h1>
+            <p>2002 RATREE | 4EVE | ANATOMY RABBIT | ATLAS | AYLA'S BIG ASS | BILLKIN X PP KRIT | BLACKBEANS | BOMB AT TRACK | BONNADOL | BOWHYLION | COCKTAIL | DADDY C & BANGKOK | MOJO DEPT | DESKTOP ERROR | DONGURIZU (JP) | FLUFFYPAK | FREEHAND | GEMINI & FOURTH x SATANG × FORD | GMM ACADEMY | H3F | HOT CLUB OF SIAM | HYBS | INK WARUNTORN | JEFF SATUR | JOEYBOY | JOEY PHUWASIT | JULIA WU (TW) | KIMBERLEY (TW) | KIN, MATCHA, ALALA | KINGSLEY DRIVE | KLEAR | KRIST | LANDOKMAI | LEMONY | LIPTA | LOMOSONIC | LOSERPOP | LYHN | MILLI | MIRRR | MONICA, FIRZTER | NANON | NEW COUNTRY | NEWERY | NONT TANONT | NUM KALA | ONLY MONDAY | PAPER PLANES | PARADOX | PATRICKANANDA | PHRANAKHON ENSEMBLE | PIXXIE | POLYCAT | POP PONGKOOL | POTATO | PROXIE | PURPEECH | QLER | RETROSPECT | ROOFTOP | SAFEPLANET | SARAH SALOLA | SEASON FIVE | SHERRY | SITTA | SIZZY | SLOT MACHINE | SLUR | SOLITUDE IS BLISS | SORRY YOUTH (TW) | STAMP | SUNNY RATTANA X SRI | TAITOSMITH | TATTOO COLOUR | TELEVISION OFF | TELEX | TELEXS | THE PARKINSON | TILLY BIRDS | TINN | TOFU | TRINITY | UNCLE BEN | URBOYTJ | VELIKA | THE THONGLOR QUARTER | THE TOYS | THE VINTAGERS | THE WHITE HAIR CUT | THE WHITEST CROW | THE YERS | THREE MAN DOWN | TIGGER X PERSES | VIOLETTE WAUTIER | VITAMIN D FROM THE SUN | WENDY WANDER (TW) | WHAL & DOLPH | WHATFALSE | YOURMOOD | ZOM MARIE | เบิล ปทุมราช | เขียนไปและงานช | ตรี ชัยณรงค์ | เบนซ์ เมืองเลย, ไปส่งกู บขส.ตู้ | ไผ่ พงศธร | มินตรา อินทิรา | ระเบียบวาทะศิลป์ | VENTED. | YEW | YOUNGOHM | ZWEED N' ROLL | คณะขวัญใจ - ดวงดาวเตียวตาย | ออยเลอร์, เน็ค นฤพล, เปาวลี พรพิมล | มนตรา อินทิรา | มนัสวี เรมิ รา |</p>        
+            <h1>Early Cow Ticket</h1>
+            <p>1,700 THB (จากปกติ 2,500 THB)</p>
+            <p>VIP Cow Ticket 3,500 THB</p>
+            <h1>จำหน่ายบัตร</h1>
+
+            <p>2-4 พฤศจิกายน 2556 ที่ www.allticket.com</p>
+            <p>5-10 ธันวาคม 2556 ที่หน้างานเทศกาล</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content_left">
+            <p>&copy; 2023 Find Your Fest</p>
+        </div>
+    </footer>
+
+</body>
+</html>

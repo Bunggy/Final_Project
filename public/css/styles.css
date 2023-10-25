@@ -1,0 +1,258 @@
+/* CSS Styles for Navbar */
+body {
+    font-family: 'Agdasima', sans-serif;
+    font-family: 'Prompt', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(206, 204, 112);
+    
+  }
+
+.logo img {
+  width: 200px;
+  padding: 20px;
+}
+
+/* ด้านบน */
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #43a33b;
+  padding: 10px 20px;
+}
+
+/* สไตล์ปุ่มเมนู */
+.menu-btn {
+  background-color: transparent;
+  border: none;
+  color: rgb(0, 0, 0);
+  background-color: #c29d37;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Prompt', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.menu-btn:hover {
+  background-color: #ffffff;
+}
+
+.dropdown {
+  display: inline-block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/* CSS Styles for Header */
+.header {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(226, 172, 72, 0.897);
+  font-weight: bold;
+  color: #000000ee;
+  font-size: 28px;
+}
+  
+.header-content {
+  padding: 30px;
+}
+  
+.header h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.header p {
+  font-size: 20px;
+}
+  
+.content > .news > ol {
+  font-size: 18px;
+  font-weight: bold;
+}
+  
+.additional-info {
+  text-align: center;
+}
+  
+.content img {
+  display: block;
+}
+
+.slide img {
+  width: 100%;
+}
+
+.concert {
+  display: inline-flex;
+  margin: 20px 0; /* Add margin to separate the concert elements */
+}
+
+.concert .poster {
+  width: 400px;
+  margin-right: 20px; /* Add margin to the right of the poster */
+  margin-left: 20px;
+}
+
+.concert .info {
+  flex: 1; /* Allow the info div to take up remaining space */
+  margin-right: 20px; /* Add margin to the right of the info div */
+}
+
+.concert p{
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.concert h1{
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.concert .menu-btn {
+  display: inline-block;
+  padding: 10px 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Prompt', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: #c29d37;
+  color: rgb(0, 0, 0);
+}
+
+.concert .menu-btn:hover {
+  background-color: #ffffff;
+}
+
+
+/* Footer */
+.footer {
+  background-color: #00254a;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  padding: 10px;
+  position: absolute;
+  width: 100%;
+}
+  
+/* course */
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column; /* แสดงผลในแนวตั้ง */
+}
+
+.container h2 {
+  margin: 0; /* ไม่มีระยะห่างรอบ h2 */
+  padding: 10px 0; /* ระยะห่างข้างบนและล่างของ h2 */
+  background-color: #e2ac17; /* สีพื้นหลังของ h2 */
+  border-radius: 10px;
+  width: 200px;
+  text-align: center; /* จัดกึ่งกลางตัวอักษรใน h2 */
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1015px) {
+  body .content a img {
+    width: 95%;
+  }
+}
+
+/* responsive */
+@media (max-width: 1015px) {
+  body .content a img {
+    width: 95%;
+  }
+
+}
+
+@media (max-width: 650px) {
+  .menu-btn {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 540px) {
+  .menu-btn {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 450px) {
+  body > div.content > footer {
+    font-size: 12px;
+  }
+
+  body > div.content > div > h1 {
+    font-size: 12px;
+  }
+
+  body > div.content > div > ol {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 420px) {
+  .menu-btn {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 375px) {
+  .menu-btn {
+    font-size: 13px;
+    padding: 2px;
+  }
+
+  .header-content h1 {
+    font-size: 24px;
+  }
+
+  .header-content p {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 280px) {
+  .header-content h1 {
+    font-size: 24px;
+  }
+
+  .header-content p {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .logo img {
+    width: 90px;
+    padding: 20px;
+  }
+
+  body > div.content > footer {
+    font-size: 12px;
+  }
+}
+  
+
+  
